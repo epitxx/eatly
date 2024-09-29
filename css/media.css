@@ -1,0 +1,324 @@
+@media (max-width: 1080px) {
+    .header__content {
+        gap: 74px;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --header-height: 96px;
+
+        font-size: 7px;
+    }
+
+    .header__content {
+        gap: 74px;
+
+        padding-bottom: 17px;
+    }
+
+    .nav__list {
+        gap: 38px;
+    }
+
+    .header__btn {
+        padding: 13px 19px;
+    }
+
+    .feature {
+        padding: 0 47px;
+    }
+}
+
+@media (max-width: 850px) {
+    .reviews__swiper {
+        --swiper-width-part: 0.6;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 641px) {
+    .header__nav {
+        --offset: 70%;
+
+        position: fixed;
+        background: var(--color-primary);
+        top: 0;
+        right: calc(0px - var(--offset));
+        z-index: 1;
+
+        transition: right 0.3s ease-in-out;
+
+        padding: 34px;
+        padding-top: var(--header-height);
+        width: var(--offset);
+        height: 100%;
+
+        overflow-y: auto;
+
+        color: var(--color-light);
+        font-size: 3rem;
+    }
+
+    .header__menu_active>.header__nav {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+
+    }
+
+    .nav__link:hover {
+        color: var(--color-dark);
+    }
+
+    .header__burger {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__content {
+        align-items: center;
+
+        max-width: initial;
+
+        text-align: center;
+    }
+
+    .hero__users {
+        --clr: #201F1F;
+    }
+
+
+
+    .features {
+        padding: 40px 0;
+    }
+
+    .features::before {
+        top: -140px;
+        left: -100px;
+        rotate: -20deg;
+    }
+
+    .features::after {
+        top: unset;
+        bottom: -60px;
+        right: -100px;
+        rotate: -27deg;
+    }
+
+    .features__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        padding: 60px 20px;
+    }
+
+    .feature + .feature {
+        border: none;
+        border-top: 1px solid rgba(197, 197, 197, 0.15);
+    }
+
+    .feature__title {
+        font-size: 4.3rem;
+    }
+
+    .feature__text {
+        font-size: 1.4rem;
+    }
+
+
+    .mobile-app__container {
+        flex-direction: column;
+    }
+
+    .mobile-app__img {
+        order: 1;
+    }
+
+    .mobile-app__content {
+        align-items: center;
+    }
+
+    .mobile-app__title {
+        text-align: center;
+    }
+
+    .mobile-app__download-btn::after {
+        bottom: unset;
+        top: 50%;
+        right: 102%;
+        rotate: 158deg;
+
+        width: 12rem;
+    }
+
+
+    .restaurants__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .purchases__content {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .purchases__list {
+        position: relative;
+    }
+
+    .purchases__list::after {
+        position: absolute;
+        bottom: -11rem;
+        right: -9rem;
+        rotate: -38deg;
+
+        background-image: url(../img/arrow-1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        width: 8.7rem;
+        aspect-ratio: 0.56;
+        
+        pointer-events: none;
+
+        content: "";
+    }
+
+    .purchases-dashboard {
+        width: 100%;
+    }
+
+
+
+    .reviews__swiper {
+        height: 40rem;
+    }
+
+
+
+    .subscribe__content {
+        align-items: center;
+
+        padding: 6rem 3rem 15rem 3rem;
+    }
+
+    .subscribe__content::after {
+        bottom: -16rem;
+        right: 50%;
+        translate: 50%;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --container-pd: 32px;
+    }
+
+    .header__content {
+        justify-content: space-between;
+
+        padding: 0;
+
+        height: 100%;
+    }
+
+    .header__menu {
+        --offset: 70%;
+
+        position: fixed;
+        top: 0;
+        right: calc(0px - var(--offset));
+        z-index: 1;
+
+        flex-direction: column;
+        align-items: start;
+
+        transition: right 0.3s ease-in-out;
+        
+        background: var(--color-primary);
+        padding: 34px;
+        padding-top: var(--header-height);
+        width: var(--offset);
+        height: 100%;
+
+        overflow-y: auto;
+
+        color: var(--color-light);
+        font-size: 3rem;
+    }
+
+    .header__menu_active {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav__link:hover {
+        color: var(--color-dark);
+    }
+
+    .header__burger {
+        display: inline-block;
+    }
+
+    .header__buttons {
+        flex-direction: column;
+        align-items: start;
+        flex-grow: 0;
+    }
+
+    .header__btn {
+        border: 2px solid var(--color-light);
+    }
+
+    .header__btn:hover {
+        border-color: var(--color-dark);
+        color: var(--color-dark);
+    }
+
+
+
+    .reviews__swiper {
+        --swiper-width-part: 1;
+    }
+
+    .reviews__swiper .swiper-scrollbar-horizontal {
+        top: 115%;
+        left: 0;
+
+        width: 100%;
+    }
+
+
+
+    .footer__header {
+        flex-direction: column;
+    }
+
+    .footer__end {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 520px) {
+    .header__menu {
+        --offset: 85%;
+    }
+
+    .restaurants__list {
+        grid-template-columns: 1fr;
+    }
+}
